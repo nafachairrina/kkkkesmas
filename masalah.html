@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masalah Umum Remaja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    nav {
+      background-color: #1976d2;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background-color: white;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1976d2;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e3e3e3;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-logo">Peduli Mental</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="pengertian.html">Pengertian</a></li>
+      <li><a href="masalah.html">Masalah</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Masalah Umum pada Remaja</h1>
+  </header>
+
+  <!-- Konten -->
+  <main>
+    <h2>Masalah yang Sering Dihadapi Remaja</h2>
+    <p>Berikut adalah beberapa tantangan mental dan emosional yang umum dihadapi oleh remaja:</p>
+    <ul>
+      <li><strong>Stres Akademik:</strong> Tekanan untuk mendapat nilai tinggi, masuk sekolah favorit, atau ujian nasional.</li>
+      <li><strong>Tekanan Sosial:</strong> Ingin diterima oleh teman sebaya, takut dikucilkan, atau pengaruh media sosial.</li>
+      <li><strong>Krisis Identitas:</strong> Bingung menentukan jati diri, orientasi hidup, dan masa depan.</li>
+      <li><strong>Masalah Keluarga:</strong> Perceraian orang tua, konflik dalam rumah, atau kurang perhatian emosional.</li>
+      <li><strong>Kesehatan Mental:</strong> Gejala depresi, kecemasan berlebih, insomnia, atau merasa tidak berguna.</li>
+    </ul>
+
+    <p>Mengetahui dan memahami masalah ini merupakan langkah awal untuk mencari solusi dan dukungan yang tepat.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Peduli Mental | Bersama Hadapi Tantangan Remaja</p>
+  </footer>
+
+  <!-- Script Hamburger Menu -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

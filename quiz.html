@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Kesehatan Mental Remaja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1976d2;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Form Kesehatan Mental Remaja</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="usia">Usia</label>
+      <select id="usia" name="usia">
+        <option value="di bawah 13">Di bawah 13 tahun</option>
+        <option value="13-15">13-15 tahun</option>
+        <option value="16-18">16-18 tahun</option>
+        <option value="di atas 18">Di atas 18 tahun</option>
+      </select>
+
+      <label for="perasaan">Bagaimana perasaanmu akhir-akhir ini?</label>
+      <textarea id="perasaan" name="perasaan" rows="4" placeholder="Ceritakan secara singkat..."></textarea>
+
+      <label for="bantuan">Apakah kamu ingin mendapatkan bantuan profesional?</label>
+      <select id="bantuan" name="bantuan">
+        <option value="ya">Ya</option>
+        <option value="tidak">Tidak</option>
+        <option value="belum yakin">Belum yakin</option>
+      </select>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</body>
+</html>
